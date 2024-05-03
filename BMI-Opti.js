@@ -11,15 +11,18 @@ function validateInput(inputId, spanId, errorMsg, regex)
     inputElement.style.border = isValid ? "5px solid green" : "5px solid red";
 }
 
-function valMass() {
+function valMass() 
+{
     validateInput("root", "s", "Weight should contain only digits", /[0-9]+$/);
 }
 
-function valHeight() {
+function valHeight() 
+{
     validateInput("root1", "s1", "Height should contain only digits", /[0-9 .]+$/);
 }
 
-function calBMI() {
+function calBMI() 
+{
     const mass = parseFloat(document.getElementById("root").value);
     const height = parseFloat(document.getElementById("root1").value);
 
