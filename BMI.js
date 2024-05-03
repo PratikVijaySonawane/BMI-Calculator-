@@ -17,9 +17,9 @@ function valMass()
         span.style.color ="green";
         span.style.fontSize = "30px"
         document.getElementById("root").style.border ="5px solid green";
-    }
-    
+    } 
 }
+
 function valHeight()
 {
     let height = parseInt(document.getElementById("root1").value);
@@ -41,13 +41,13 @@ function valHeight()
         span.style.fontSize="30px";
         document.getElementById("root1").style.border="5px solid green";
     }
-
 }
+
 function calBMI()
 {
-    const mass = parseInt(document.getElementById("root").value);
-    const height = parseInt(document.getElementById("root1").value);
-    const bmi =  mass/(height*height);
+    var mass = parseInt(document.getElementById("root").value);
+    var height = parseInt(document.getElementById("root1").value);
+    var bmi =  mass/(height*height);
     var span = document.getElementById("s2");
     span.innerHTML=`Your BMI is-->${bmi}`;
     span.style.color="darkblue";
