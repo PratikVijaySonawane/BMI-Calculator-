@@ -1,6 +1,6 @@
 function valMass()
 {
-    let mass= document.getElementById("root").value;
+    let mass= parseInt(document.getElementById("root").value);
     let reg = /[0-9]+$/;
     let res = mass.match(reg);
     if(res==null)
@@ -22,7 +22,7 @@ function valMass()
 }
 function valHeight()
 {
-    let height = document.getElementById("root1").value;
+    let height = parseInt(document.getElementById("root1").value);
     let reg = /[0-9 .]+$/
     let res = height.match(reg);
     if(res==null)
@@ -45,8 +45,8 @@ function valHeight()
 }
 function calBMI()
 {
-    const mass = document.getElementById("root").value;
-    const height = document.getElementById("root1").value;
+    const mass = parseInt(document.getElementById("root").value);
+    const height = parseInt(document.getElementById("root1").value);
     const bmi =  mass/(height*height);
     var span = document.getElementById("s2");
     span.innerHTML=`Your BMI is-->${bmi}`;
